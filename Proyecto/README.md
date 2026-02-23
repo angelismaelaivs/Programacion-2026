@@ -1,2 +1,2 @@
-# EJERCICIOS Y NOTAS
-Ésta carpeta está destinada a los diferentes ejercicios de clase y las notas de la misma.
+# PROYECTOS
+En esta carpeta esta destinada para los archivos para mi proyecto del curso de Programacion-2026
