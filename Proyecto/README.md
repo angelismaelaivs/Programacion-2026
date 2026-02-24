@@ -33,4 +33,4 @@ pesos positivos.
         Todos los nodos estén visitados, o
         Se haya alcanzado el nodo destino.
     6. Resultado
-    Las distancias finales representan los caminos más cortos desde el origen a cada nodo.
+        Las distancias finales representan los caminos más cortos desde el origen a cada nodo.
