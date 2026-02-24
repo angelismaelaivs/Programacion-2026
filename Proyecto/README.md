@@ -15,22 +15,22 @@ Mi proyecto consta en un software resolutor de caminos mínimos en gráficas sim
 - **Algoritmo de Dijkstra:** Dijkstra calcula los caminos mínimos desde un vértice fuente en gráficas ponderadas con
 pesos positivos.
     1. Inicialización:
-        Asigna a todos los nodos una distancia infinita.
-        Al nodo origen asígnale distancia 0.
-        Marca todos los nodos como no visitados.
+        * Asigna a todos los nodos una distancia infinita.
+        * Al nodo origen asígnale distancia 0.
+        * Marca todos los nodos como no visitados.
     2. Selección del nodo actual    
-        Elige el nodo no visitado con la menor distancia provisional.
-        Este nodo será el nodo actual.
+        * Elige el nodo no visitado con la menor distancia provisional.
+        * Este nodo será el nodo actual.
     3. Relajación de aristas
-        Para cada vecino no visitado del nodo actual:
-        Calcula la distancia desde el origen pasando por el nodo actual.
-        Si esta distancia es menor que la distancia conocida, actualízala.
+        * Para cada vecino no visitado del nodo actual:
+        * Calcula la distancia desde el origen pasando por el nodo actual.
+        * Si esta distancia es menor que la distancia conocida, actualízala.
     4. Marcar como visitado
-        Marca el nodo actual como visitado.
-        Una vez visitado, su distancia ya no se vuelve a modificar.
+        * Marca el nodo actual como visitado.
+        * Una vez visitado, su distancia ya no se vuelve a modificar.
     5. Repetición
-        Repite los pasos 2 a 4 hasta que:
-        Todos los nodos estén visitados, o
-        Se haya alcanzado el nodo destino.
+        * Repite los pasos 2 a 4 hasta que:
+        * Todos los nodos estén visitados, o
+        * Se haya alcanzado el nodo destino.
     6. Resultado
-        Las distancias finales representan los caminos más cortos desde el origen a cada nodo.
+        * Las distancias finales representan los caminos más cortos desde el origen a cada nodo.
