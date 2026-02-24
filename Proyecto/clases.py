@@ -25,5 +25,5 @@ class grafica:
             print("No existen tales vértices, introduce vertices que sí existan en la gráfica.")
             return
 
-    def vecinos(self, nombre)
-        return[(u.v_1; u.v_2) for u in self.aristas if u.v_1 == origen]
+    def vecinos(self, nombre):
+        return [(u.destino, u.peso) for u in self.aristas if u.origen == nombre]
