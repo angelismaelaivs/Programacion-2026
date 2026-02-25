@@ -8,7 +8,7 @@ def main():
     
     v = Vertice(nombre, peso)
     
-    print("\nVértice creado:")
+    print("Vértice creado:")
     print("Nombre:", v.nombre)
     print("Peso:", v.peso)
 
