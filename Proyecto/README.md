@@ -10,7 +10,7 @@ Mi proyecto consta en un software resolutor de caminos mínimos en gráficas sim
     + Sin lazos: No hay arista que conecte un vértice consigo mismo.
     + Sin aristas múltiples: Solo puede existir una arista (o ninguna) conectando cualquier par de vértices.
     + Aristas no dirigidas: El orden de los vértices en una arista no importa {u,v}={v,u}
-- **Gráfica ponderada:** Dada una gráfica G=(V,E) se considera un tercer conjuto W que consta de una funcion W:V-->R donde se le asigna un "peso" a cada uno de los vertices de G.
+- **Gráfica ponderada:** Dada una gráfica G=(V,E) se considera un tercer conjuto W que consta de una funcion W:V-->R donde se le asigna un "peso" a cada uno de los vertices de G, tambien se puede definir la funcion W a las aristas de G.
 
 - **Algoritmo de Dijkstra:** Dijkstra calcula los caminos mínimos desde un vértice fuente en gráficas ponderadas con
 pesos positivos.
