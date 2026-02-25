@@ -1,7 +1,7 @@
 class vertices:
     def __init__(self,nombre):
         self.nombre = nombre
-        self.dist_min
+        self.dist_min = float()
         self.visitado = False
         self.previo = None
 
@@ -14,16 +14,20 @@ class aristas:
 class grafica:
     def __init__(self,):
         self.vertices = {}
-        self.aristas = []
+        self.aristas = {}
     
     def agregar_vertice(self, nombre):
         if nombre not in self.vertices:
-            self.vertices[nombre] = self.vertices(nombre)
-
+            self.vertices[nombre] = vertices(nombre)
+            print(f"Vértice '{nombre}' agregado.")
     def agregar_aristas(self, v_1, v_2, w):
         if v_1 not in self.vertices or v_2 not in self.vertices:
-            print("No existen tales vértices, introduce vertices que sí existan en la gráfica.")
+            self.agregar_vertice(v_1)
+            self.agregar_vertice(v_2)
+            
             return
+        if w <= 0:
+            print("El peso debe ser mayor a cero.")
 
     def vecinos(self, nombre):
         return [(u.destino, u.peso) for u in self.aristas if u.origen == nombre]
