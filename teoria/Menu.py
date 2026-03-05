@@ -1,4 +1,4 @@
-from Clases import Cuenta 
+from Cuenta import Cuenta 
 
 class Menu:
   def __init__(self, mensaje, cuenta):
