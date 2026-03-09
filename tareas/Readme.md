@@ -1,5 +1,5 @@
 # Integrantes del equipo:
-- Elemento de la lista
+- Ángel Ismael Villa Sánchez
 - Elemento de la lista
 
 ## Ejercicio 1
