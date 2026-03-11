@@ -16,11 +16,12 @@ class Menu:
         print('3. Retirar')
         print('4. Salir')
         print("------------------------------------------------")
-        opcion = input('Elija una opción:')
-        self.procesaOpcion(opcion)
+        
+        
 
   def procesaOpcion(self, opcion):
         while True:
+            opcion = input('Elija una opción:')
             if opcion == '1':
                 print('Usted eligió información de la cuenta.')
                 self.cuenta.informacion()
@@ -43,12 +44,3 @@ class Menu:
             else:
                 print('Opcion no valida, elija entre las opciones 1, 2, 3 o 4.')
                 self.despliegaMenu()
-
-
-                
-
-cuenta1 = Cuenta(2.10, 'Cuenta de ahorro', '27/Diciembre/2010')
-
-menu = Menu("BANCO CIENCIAS", cuenta1)
-menu.darBienvenida()
-menu.despliegaMenu()
