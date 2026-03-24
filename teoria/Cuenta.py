@@ -9,16 +9,19 @@ class Cuenta:
           self.saldo = self.saldo + cantidad
           return True
         else:
-          return False
           print('La cantidad a depositar debe de ser mayor a cero.')
+          return False
 
       def retirar(self,cantidad):
         if cantidad > self.saldo:
           print('Sin fondos suficientes para el retiro')
+          return False
         elif self.saldo >= cantidad > 0:
           self.saldo = self.saldo - cantidad
+          return True
         else:
           print('La cantidad a retirar debe de ser mayor a cero.')
+          return False
 
       def informacion(self):
         print("El saldo de la cuenta es: ", self.saldo,"$")
