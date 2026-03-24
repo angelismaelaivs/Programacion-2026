@@ -7,7 +7,9 @@ class Cuenta:
       def depositar(self,cantidad):
         if cantidad > 0:
           self.saldo = self.saldo + cantidad
+          return True
         else:
+          return False
           print('La cantidad a depositar debe de ser mayor a cero.')
 
       def retirar(self,cantidad):
