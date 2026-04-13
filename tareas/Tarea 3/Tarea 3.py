@@ -41,7 +41,7 @@ class Playlist:
     resultados = []
 
     for cancion in self.canciones:
-      if texto.lower() in cancion.lower():
+      if texto.lower() in cancion.lower(): #le modifique que busque el texto en minusculas para no tener problemas con las mayusculas de los titulos
         resultados.append(cancion)
 
     if resultados:
