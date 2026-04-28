@@ -1,3 +1,7 @@
+'''
+Hice esta clase para poder procesar las opciones de mi menu y hacer un ciclo 
+de manera mas sencilla (: 
+'''
 from Cuenta import *
 
 class ProcesadorOpcion:
