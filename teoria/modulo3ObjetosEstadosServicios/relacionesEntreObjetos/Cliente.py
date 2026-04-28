@@ -15,4 +15,4 @@ class Cliente:
         print('Nombre::', self.nombre)
         print('Mail::', self.mail)
         print('Edad::', self.edad)
-        self.cuenta.informacion()
+        self.cuenta.informacion()  #Aqui se usan los metodos de la clase Cuenta

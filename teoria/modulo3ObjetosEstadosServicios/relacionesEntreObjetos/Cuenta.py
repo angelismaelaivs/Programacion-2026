@@ -28,6 +28,3 @@ class Cuenta:
         print("La cuenta es de tipo: ", self.tipo)
         print("La cuenta se creó el día: ", self.fechaCreacion)
    
-      def __str__(self):
-        return f"Saldo::{self.saldo}  ::Tipo::{self.tipo}  ::Fecha de creación::{self.fechaCreacion}"
-      
