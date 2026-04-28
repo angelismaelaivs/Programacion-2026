@@ -7,18 +7,18 @@ class Menu:
         self.cuenta = cuenta
 
     def darBienvenida(self):
-        print("=" * 50)
+        print("=" * 60)
         print("Hola bienvenido a la interfaz de tu cuenta Banco Ciencias.")
-        print("=" * 50)
+        print("=" * 60)
 
     def despliegaMenu(self):
-            print("-" * 50)
+            print("-" * 60)
             print ('Selecciona una opción para continuar:')
             print('1. Información de cuenta')
             print('2. Depositar')
             print('3. Retirar')
             print('4. Salir')
-            print("-" * 50)
+            print("-" * 60)
             opcion = input("Elige la opcion deseada:")
             return opcion
             
@@ -27,8 +27,8 @@ class Menu:
 
             if opcion == '1':
                 print('-----INFORMACIÓN DE LA CUENTA-----')
-                print(self.cuenta)  #Aquí ocupo el str en Cuenta
-                return True
+                print(self.cuenta)  
+                return True                        # <------------ validación  
             
             elif opcion == "2":
                 print("-----DEPÓSITO-----")
@@ -38,7 +38,7 @@ class Menu:
                 else:
                     print("No se pudo realizar el deposito")
                     
-                return True
+                return True                        # <------------ validación
                 
             elif opcion == "3":
                 print('------RETIRO------')
@@ -47,13 +47,13 @@ class Menu:
                     print(f"Retiro exitoso, su saldo es de: {self.cuenta.saldo}")  #Aquí ocupo el str en Cuenta
                 else:
                     print("No se pudo realizar el retiro.")
-                return True
+                return True                        # <------------ validación
                 
             elif opcion == "4":
                 print("Usted eligió finalizar la sesion, vuelva pronto.")
-                return False
+                return False                       # <------------ validación
             else:
                 print('Opcion no valida, elija entre las opciones 1, 2, 3 o 4.')
-                return True
+                return True                        # <------------ validación
             
                  

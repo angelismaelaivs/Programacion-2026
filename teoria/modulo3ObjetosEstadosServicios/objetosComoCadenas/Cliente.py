@@ -11,6 +11,7 @@ class Cliente:
         self.edad = edad
         self.cuenta = cuenta   #Aqui hago una relación entre la clase Cuenta y Cliente
 
+#Definimos el metodo str para nuestra clase Cliente
     def __str__(self):
         return f"Nombre::{self.nombre}  ::Mail::{self.mail}  ::Edad::{self.edad} ::Cuenta:: {self.cuenta}"
 

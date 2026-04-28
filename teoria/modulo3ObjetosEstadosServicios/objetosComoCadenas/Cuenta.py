@@ -1,9 +1,8 @@
 class Cuenta:
-      def __init__  (self, saldo, tipo, fechaCreacion, titular):
+      def __init__  (self, saldo, tipo, fechaCreacion):
         self.saldo = saldo
         self.tipo = tipo
         self.fechaCreacion = fechaCreacion
-        self.titular = titular
         
       def depositar(self,cantidad):
         if cantidad > 0:
@@ -29,6 +28,7 @@ class Cuenta:
         print("La cuenta es de tipo: ", self.tipo)
         print("La cuenta se creó el día: ", self.fechaCreacion)
    
+#Definimos nuestro str para la clase Cuenta
       def __str__(self):
         return f"Saldo::{self.saldo}  ::Tipo::{self.tipo}  ::Fecha de creación::{self.fechaCreacion}"
       
