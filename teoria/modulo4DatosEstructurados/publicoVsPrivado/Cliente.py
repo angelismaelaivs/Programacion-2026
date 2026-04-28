@@ -12,6 +12,7 @@ class Cliente:
         self.edad = edad
         self.cuenta = cuenta  
 
+    #Aqui ocupo el metodo getTipo()
     def __str__(self):
         return f"Nombre::{self.nombre}  ::Mail::{self.mail}  ::Edad::{self.edad} ::Cuenta:: {self.cuenta} ::Tipo:: {self.cuenta.getTipo()}"
 
