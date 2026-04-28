@@ -1,8 +1,9 @@
 class Cuenta:
-      def __init__  (self, saldo, tipo, fechaCreacion):
+      def __init__  (self, saldo, tipo, fechaCreacion, titular):
         self.saldo = saldo
         self.tipo = tipo
         self.fechaCreacion = fechaCreacion
+        self.titular = titular
         
       def depositar(self,cantidad):
         if cantidad > 0:
