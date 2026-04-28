@@ -5,12 +5,14 @@ class Cuenta:
         self.fechaCreacion = fechaCreacion
         self.titular = titular
 
+#Agregamos el metodo depositar
       def depositar(self,cantidad):
           if cantidad > 0:
             self.saldo = self.saldo + cantidad
             return True
           return False
-      
+
+#Agregamos el metodo retirar
       def retirar(self,cantidad):
           if cantidad >0:
             self.saldo = self.saldo - cantidad

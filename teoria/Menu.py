@@ -24,6 +24,7 @@ class Menu:
             
 
     def procesaOpcion(self, opcion):
+
             if opcion == '1':
                 print('-----INFORMACIÓN DE LA CUENTA-----')
                 print(self.cuenta)  #Aquí ocupo el str en Cuenta
