@@ -7,23 +7,24 @@ class Menu:
         self.cuenta = cuenta
 
     def darBienvenida(self):
-        print("=" * 50)
+        print("=" * 60)
         print("Hola bienvenido a la interfaz de tu cuenta Banco Ciencias.")
-        print("=" * 50)
+        print("=" * 60)
 
     def despliegaMenu(self):
-            print("-" * 50)
+            print("-" * 60)
             print ('Selecciona una opción para continuar:')
             print('1. Información de cuenta')
             print('2. Depositar')
             print('3. Retirar')
             print('4. Salir')
-            print("-" * 50)
+            print("-" * 60)
             opcion = input("Elige la opcion deseada:")
             return opcion
             
 
     def procesaOpcion(self, opcion):
+
             if opcion == '1':
                 print('-----INFORMACIÓN DE LA CUENTA-----')
                 print(self.cuenta)  #Aquí ocupo el str en Cuenta
