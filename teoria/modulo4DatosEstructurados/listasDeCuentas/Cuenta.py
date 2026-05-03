@@ -1,13 +1,9 @@
 class Cuenta:
       def __init__  (self, saldo, tipo, fechaCreacion):
-        '''
-        Volvemos privados estos datos para que no sean modificados desde fuera  <-------------------------------------
-        '''
         self.__saldo = saldo
         self.__tipo = tipo
         self.__fechaCreacion = fechaCreacion
 
-      # Defino mis metodos GETTERS para saldo, tipo y fecha de creación         <-------------------------------------
       def getSaldo(self):
         return self.__saldo
       
