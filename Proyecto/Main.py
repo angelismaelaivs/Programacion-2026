@@ -5,6 +5,8 @@ from Arista import *
 class Main:
     pass
 
+
+#Prueba de leerMatriz
 nombres = ["A", "B", "C", "D"]
 
 matriz = [
@@ -18,3 +20,10 @@ g = Grafica()
 g.leerMatriz(nombres, matriz)
 
 print(g)
+
+verticePrueba = g.obtenerVertice("A")
+print(verticePrueba.nombre)
+print(verticePrueba.distanciaTotal)
+
+for arista in verticePrueba.aristas:
+    print(arista)
