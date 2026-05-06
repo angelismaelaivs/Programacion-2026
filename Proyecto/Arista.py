@@ -7,4 +7,4 @@ class Arista:
         self.distancia = distancia
         
     def __str__(self):
-        return f'::ORIGEN:: {self.origen}, ::DESTINO:: {self.destino}, ::DISTANCIA:: {self.distancia}'
+        return f'::Origen:: {self.origen.nombre}, ::Destino:: {self.destino.nombre}, ::DISTANCIA:: {self.distancia}'

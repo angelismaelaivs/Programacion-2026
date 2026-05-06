@@ -1,10 +1,10 @@
 from Arista import *
 
 class Vertice:
-    def __init__(self, nombre, distanciaTotal):
+    def __init__(self, nombre):
         self.nombre = nombre
         # Marca la suma de las distancias entre un vértice y otro.
-        self.distanciaTotal = distanciaTotal  
+        self.distanciaTotal = float('inf') 
         # Me indica si ya visité este vértice durante el algoritmo.
         self.visitado = False
         # Aristas que salen del vértice.
@@ -13,7 +13,7 @@ class Vertice:
     # METODOS
 
     # Así creamos una arista entre 2 vértices
-    def agregarArista(self):
+    def agregarArista(self, origen, destino, distancia):
         nuevaArista = Arista(origen, destino, distancia)
         self.aristas.append(nuevaArista)
 
