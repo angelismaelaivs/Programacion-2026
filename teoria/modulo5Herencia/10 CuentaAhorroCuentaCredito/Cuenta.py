@@ -13,7 +13,8 @@ class Cuenta:
       def getFechaCreacion(self):
         return self.__fechaCreacion
 
-      def depositar(self,cantidad):
+      # Vamos a heredar este método en la cuenta hija
+      def depositar(self,cantidad):   
         if cantidad > 0:
           self.__saldo = self.__saldo + cantidad
           return True                       

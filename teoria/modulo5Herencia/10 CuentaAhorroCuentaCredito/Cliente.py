@@ -25,7 +25,6 @@ class Cliente:
             for i, cuenta in enumerate(self.cuentas, 1):
                 print(i, '. ', cuenta)
 
-
     def __str__(self):
         tmp = "Nombre::" + str(self.nombre)
         tmp += "\nMail::" + str(self.mail)
