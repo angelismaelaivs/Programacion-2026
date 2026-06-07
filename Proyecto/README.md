@@ -38,9 +38,10 @@ pesos positivos.
 
 ## Ejemplo de prueba
 
-Suponiendo que estamos en el metro y queremos movernos entre estaciones usando los transbordos, usaremos como ejemplo las estaciones Pantitlan,Jamaica,Chabacano,Balderas,Hidalgo,LaRaza,Consulado,Tacubaya y CentroMedico con los pesos de la grafica que indican el tiempo entre dichas estaciones.
+Suponiendo que estamos en el metro y queremos movernos entre estaciones usando los transbordos; usaremos como ejemplo las estaciones Pantitlan,Jamaica,Chabacano,Balderas,Hidalgo,LaRaza,Consulado,Tacubaya y CentroMedico con los pesos de la gráfica que indican el tiempo entre dichas estaciones.
 
-Para visualizar de mejor forma la grafica que analizaremos ocupé el sitio web https://graphonline.top/en/ para generar la imagen de la gráfica y además ya tiene la herramienta del algoritmo de Dijkstra integrado así que nos será de utilidad para corroborar el resultado de mi sistema. 
+Para visualizar de mejor forma la gráfica que analizaremos ocupé el sitio web https://graphonline.top/en/ para generar la imagen de la gráfica.
+Además el sitio ya cuenta con la herramienta del algoritmo de Dijkstra integrado así que nos será de utilidad para corroborar el resultado de mi sistema. 
 
 En la imagen numeramos los vertices del 1 al 9 en el listado de las estaciones.
 ![Grafica Metro CDMX](imagenes/grafica.png)
@@ -51,15 +52,15 @@ Nombres:
 Pantitlan,Jamaica,Chabacano,Balderas,Hidalgo,LaRaza,Consulado,Tacubaya,CentroMedico
 
 Matriz de adyacencia
-0, 9, 12, 0, 0, 0, 0, 0, 0
-0, 0,  9, 0, 0, 0, 6, 0, 8
-0, 0,  0, 7, 0, 0, 0, 0, 5
-0, 0,  4, 0, 6, 0, 0, 8, 0
-0, 0,  0, 0, 0, 5, 0, 7, 0
-0, 0,  0, 0, 3, 0, 8, 0, 0
-0, 0,  0, 0, 0, 4, 0, 0, 0
-0, 0,  0, 0, 4, 0, 0, 0, 6
-0, 0,  0, 0, 0, 0, 0, 0, 0
+0, 9, 12, 0, 0, 0, 0, 0, 0  
+0, 0,  9, 0, 0, 0, 6, 0, 8  
+0, 0,  0, 7, 0, 0, 0, 0, 5  
+0, 0,  4, 0, 6, 0, 0, 8, 0  
+0, 0,  0, 0, 0, 5, 0, 7, 0  
+0, 0,  0, 0, 3, 0, 8, 0, 0  
+0, 0,  0, 0, 0, 4, 0, 0, 0  
+0, 0,  0, 0, 4, 0, 0, 0, 6  
+0, 0,  0, 0, 0, 0, 0, 0, 0  
 
 ### Ejemplo 1 Jamaica - Hidalgo
 
