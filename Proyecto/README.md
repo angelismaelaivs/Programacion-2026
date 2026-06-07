@@ -51,7 +51,7 @@ A continuación dejo los nombres y la matriz de adyacencia para copiar y pegar e
 Nombres: 
 Pantitlan,Jamaica,Chabacano,Balderas,Hidalgo,LaRaza,Consulado,Tacubaya,CentroMedico
 
-Matriz de adyacencia
+Matriz de adyacencia:  
 0, 9, 12, 0, 0, 0, 0, 0, 0  
 0, 0,  9, 0, 0, 0, 6, 0, 8  
 0, 0,  0, 7, 0, 0, 0, 0, 5  
