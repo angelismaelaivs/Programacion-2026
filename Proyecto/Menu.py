@@ -8,9 +8,9 @@ class Menu:
         self._dijkstra = None
 
     def iniciarMenu(self):
-        print("╔══════════════════════════════════════╗")
-        print("║   Bienvenido al resolutor de Dijkstra  ║")
-        print("╚══════════════════════════════════════╝\n")
+        print("╔═════════════════════════════════════════╗")
+        print("║   Bienvenido al resolutor de Dijkstra   ║")
+        print("╚═════════════════════════════════════════╝\n")
 
         self._pedirGrafica()
         self._pedirBusqueda()
