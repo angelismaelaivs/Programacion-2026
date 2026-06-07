@@ -1,9 +1,8 @@
 # IDEAS Y PROGRESO
 
-- Clase: vertices, aristas y grafica
-- Clase: Visitar nodos; esta clase verificara la distancia entre nodos y entonces segun la distancia los visitará o no.
+- Aun falla cuando no existe un camino entre 2 vertices, ya que si te indica que la distancia es infinita por lo que no existe un camino pero te imprime el vértice de destino como camino XD.
 
-
+- Ya funciona el bucle para buscar varios caminos en la misma gráfica.
 
 
 # ALGORITMO PRINCIPAL
