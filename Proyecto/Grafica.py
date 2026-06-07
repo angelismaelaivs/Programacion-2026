@@ -27,6 +27,10 @@ class Grafica:
             if vertice.nombre == nombre:
                 return vertice
     
+    def resetBusqueda(self):
+        for vertice in self.vertices:
+            vertice.resetBusqueda() 
+
     def __str__(self):
         resultado = "=== Grafica ===\n"
         for vertice in self.vertices:

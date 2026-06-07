@@ -1,4 +1,4 @@
-# PROYECTO
+# PROYECTO (Al final dejé instrucciones para probar el sistema)
 En esta carpeta esta destinada para los archivos para mi proyecto del curso de Programacion-2026
 
 Mi proyecto consta en un software resolutor de caminos mínimos en gráficas simples y pesos positivos con el algoritmo de Dijkstra
@@ -34,3 +34,40 @@ pesos positivos.
         * Se haya alcanzado el nodo destino.
     6. Resultado
         * Las distancias finales representan los caminos más cortos desde el origen a cada nodo.
+
+
+## Ejemplo de prueba
+
+Suponiendo que estamos en el metro y queremos movernos entre estaciones usando los transbordos; usaremos como ejemplo las estaciones Pantitlan,Jamaica,Chabacano,Balderas,Hidalgo,LaRaza,Consulado,Tacubaya y CentroMedico con los pesos de la gráfica que indican el tiempo entre dichas estaciones.
+
+Para visualizar de mejor forma la gráfica que analizaremos ocupé el sitio web https://graphonline.top/en/ para generar la imagen de la gráfica.
+Además el sitio ya cuenta con la herramienta del algoritmo de Dijkstra integrado así que nos será de utilidad para corroborar el resultado de mi sistema. 
+
+En la imagen numeramos los vertices del 1 al 9 en el listado de las estaciones.
+![Grafica Metro CDMX](imagenes/grafica.png)
+
+A continuación dejo los nombres y la matriz de adyacencia para copiar y pegar en la terminal.
+
+Nombres: 
+Pantitlan,Jamaica,Chabacano,Balderas,Hidalgo,LaRaza,Consulado,Tacubaya,CentroMedico
+
+Matriz de adyacencia:  
+0, 9, 12, 0, 0, 0, 0, 0, 0  
+0, 0,  9, 0, 0, 0, 6, 0, 8  
+0, 0,  0, 7, 0, 0, 0, 0, 5  
+0, 0,  4, 0, 6, 0, 0, 8, 0  
+0, 0,  0, 0, 0, 5, 0, 7, 0  
+0, 0,  0, 0, 3, 0, 8, 0, 0  
+0, 0,  0, 0, 0, 4, 0, 0, 0  
+0, 0,  0, 0, 4, 0, 0, 0, 6  
+0, 0,  0, 0, 0, 0, 0, 0, 0  
+
+### Ejemplo 1 Jamaica - Hidalgo
+
+La ruta que corresponde es Jamaica-->Consulado-->LaRaza-->Hidalgo y la suma es de 13.
+![Ruta Jamaica a Hidalgo](imagenes/ejemplo1.png)
+
+### Ejemplo 2 Pantitlan - Tacubaya
+
+El camino que corresponde es Pantitlan-->Chabacano-->Balderas-->Tacubaya y la suma es 27
+![Ruta Pantitlan a Tacubaya](imagenes/ejemplo2.png)
